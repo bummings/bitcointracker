@@ -11,9 +11,9 @@ btn.addEventListener('click', function() {
 	XHR.onreadystatechange = function() {
 		if(XHR.readyState == 4 && XHR.status == 200) {
 			
-			var resultUSD = JSON.parse(XHR.responseText).bpi.USD.rate_float;
-			var resultEUR = JSON.parse(XHR.responseText).bpi.EUR.rate_float;
-			var resultGBP = JSON.parse(XHR.responseText).bpi.GBP.rate_float;
+			var resultUSD = JSON.parse(XHR.responseText).bpi.USD.rate_float.toFixed(2);
+			var resultEUR = JSON.parse(XHR.responseText).bpi.EUR.rate_float.toFixed(2);
+			var resultGBP = JSON.parse(XHR.responseText).bpi.GBP.rate_float.toFixed(2);
 
 			console.log('USD: ' + resultUSD);
 			console.log('EUR: ' + resultEUR);

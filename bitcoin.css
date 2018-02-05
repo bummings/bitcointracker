@@ -38,9 +38,11 @@ h2 {
 }
 
 #resultBox {
+	display: flex;
+	justify-content: center;
 	border: 6px solid black;
 	width: 294px;
-	text-align: center;
+	/*text-align: center;*/
 	animation: resultFade 1.3s 0.8s ease-in;
 	animation-fill-mode: forwards;
 	opacity: 0;
